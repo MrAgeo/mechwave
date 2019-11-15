@@ -15,7 +15,7 @@ plt.close()
 fig = plt.figure(figsize=(12,12))
 ax = fig.add_subplot(111, projection='3d')
 
-mesh = meshio.read("examples/Rectangulo_2.msh")
+mesh = meshio.read("mesh_examples/Rectangulo_2.msh")
 
 bcondList = {'Superior': (1.0, 0.0, 'lambda x,y: 0'),
              'Izquierdo': (1.0, 0.0, 'lambda x,y: 0'),
