@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuOpciones">
+    <property name="title">
+     <string>Opciones</string>
+    </property>
+    <widget class="QMenu" name="menuDefinir">
+     <property name="title">
+      <string>Definir</string>
+     </property>
+     <addaction name="action_Materiales"/>
+     <addaction name="action_BoundaryCond"/>
+     <addaction name="actionDefinir_Termino_Fuente"/>
+     <addaction name="actionDefinir_Perfil_inicial"/>
+     <addaction name="actionDefinir_Velocidad_inicial"/>
+    </widget>
+    <addaction name="menuDefinir"/>
+    <addaction name="action_Asignar_materiales"/>
+    <addaction name="actionFrame_number"/>
+   </widget>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <addaction name="action_Importar_malla"/>
+    <addaction name="action_Solucionar"/>
+    <addaction name="action_Salir"/>
+   </widget>
+   <addaction name="menuArchivo"/>
+   <addaction name="menuOpciones"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_BoundaryCond">
+   <property name="text">
+    <string>Condiciones de Frontera</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+  <action name="action_Importar_malla">
+   <property name="text">
+    <string>Importar malla</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionDefinir_Termino_Fuente">
+   <property name="text">
+    <string>Término Fuente</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="action_Salir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="action_Asignar_materiales">
+   <property name="text">
+    <string>Asignar Materiales</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+M</string>
+   </property>
+  </action>
+  <action name="action_Solucionar">
+   <property name="text">
+    <string>Solucionar</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="actionDefinir_Perfil_inicial">
+   <property name="text">
+    <string>Perfil inicial</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionDefinir_Velocidad_inicial">
+   <property name="text">
+    <string>Velocidad inicial</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="action_Materiales">
+   <property name="text">
+    <string>Materiales</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+M</string>
+   </property>
+  </action>
+  <action name="actionFrame_number">
+   <property name="text">
+    <string>Numero de Frames a mostrar</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
