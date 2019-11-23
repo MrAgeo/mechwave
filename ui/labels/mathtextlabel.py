@@ -5,6 +5,9 @@ QLabel para LaTeX. Tomado de
 
 https://stackoverflow.com/questions/14097463/displaying-nicely-an-algebraic-expression-in-pyqt
 
+
+Este programa hace parte de MechWave(https://github.com/MrAgeo/mechwave), el simulador de ondas
+acusticas.
 """
 from PyQt5 import QtGui, QtWidgets
 from PyQt5.QtWidgets import QVBoxLayout
