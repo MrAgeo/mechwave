@@ -1,21 +1,26 @@
 # README
+[Spanish Version](README_es.md)
 
-## Descripción
-**_MechWave_** es una aplicación que simula por medio de elementos finitos la interacción de una onda con dos o más medios, permitiendo experimentar un poco con las propiedades de cada material a simular.
+## Overview
 
-## Video
-El video de explicación del proyecto, y una pequeña introducción al programa se puede encontrar en [este link](https://www.youtube.com/watch?v=lg9X_b6Rx4o).
+**_Mechwave_** is an app that simulates the interaction of a mechanical wave with two or more mediums. Its purpose is to experiment with the characteristics of each simulated material.
 
-## Dependencias
-**_MechWave_** nececita para su ejecución:
+## Video (Spanish)
+The project's video and an introduction to the program itself can be found [here](https://www.youtube.com/watch?v=lg9X_b6Rx4o).
+
+## Dependencies
+**_MechWave_** depends on:
 - `python3`
 - `PyQt5`
 - `matplotlib`
 - `numpy`
 - `meshio`
 
-## Ejecución
-Sólo clona el repositorio y ejecuta el archivo `base/mechwave_main.py`.  Allí aparecerá una ventana donde se puede importar la malla, editar los materiales a simular, asignarlos a las selecciones de elementos previamente hechas (por ejemplo con [gmsh](http://gmsh.info/#Download)), y ver las amplitudes de las ondas a través del material. De momento sólo permite importar los tipos de archivos .MSH de gmsh. Sin embargo, en un futuro pondremos más.
+## How to run Mechwave
+In order to run **_MechWave_**, you have to clone this repo and execute the main file (`base/mechwave_main.py`). Then, the main window will open.
+Here you can import a mesh ('Archivo >  Importar malla'), edit the materials ('Opciones > Definir > Materiales'), assign the materials to the previously-defined element sections (e.g., through [gmsh](http://gmsh.info/#Download)), and observe the wave amplitude through the materials. 
+
+_Note:_ Currently, **_Mechwave_** only supports gmsh's MSH files.
  
-## Licencia
-**_MechWave_** se distribuye bajo la licencia [GPLv3](http://www.gnu.org/licenses/gpl-3.0.html).
+## License
+**_MechWave_** is distributed under the [GPLv3](http://www.gnu.org/licenses/gpl-3.0.html) license.
